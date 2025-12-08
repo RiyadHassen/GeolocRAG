@@ -23,7 +23,7 @@ messages = [
 ]
 
 # API Key
-api_key = "sk-47aa15d46fd2486fb7c7fcc5bc8e12ba"
+api_key = ""
 
 response = MultiModalConversation.call(
     api_key=api_key,
