@@ -2,7 +2,7 @@ from transformers import Qwen2VLForConditionalGeneration, Qwen2VLProcessor
 from PIL import Image
 import torch
 from peft import PeftModel
-
+import argparse
 
 class InferencePipeline:
     def __init__(self, 
@@ -71,3 +71,16 @@ class InferencePipeline:
 
         return output_text
 
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Fintune argument parser")
+    parser.add_argument("--base_model_path", type =str, required=True)
+    parser.add_argument("--adapter_path", type=str, required=True)
+    parser.add_argument("--image_path", type=str, required=True, help = "Path to image to test")
+    
+    args = parser.parse_args()
+    base_model = args.base_model_path
+    img_path = args.image_path
+    adapter_path = args.adapter_path
+
+    infernce_pipe = InferencePipeline(base_model_path = base_model, adapter_path =adapter_path)
+    infernce_pipe.infer_finetuned(img_path)

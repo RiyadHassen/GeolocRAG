@@ -1,6 +1,4 @@
 # This code is based on the revised code from fastchat based on tatsu-lab/stanford_alpaca.
-
-
 from dataclasses import dataclass, field
 import json
 import math
