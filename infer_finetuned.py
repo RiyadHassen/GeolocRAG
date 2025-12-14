@@ -1,4 +1,4 @@
-from transformers import Qwen2VLForConditionalGeneration, Qwen2VLProcessor
+from transformers import Qwen2VLForConditionalGeneration, Qwen2VLProcessor, BitsAndBytesConfig
 from PIL import Image
 import torch
 from peft import PeftModel
@@ -8,14 +8,24 @@ class InferencePipeline:
     def __init__(self, 
                 base_model_path ="./Qwen-VL/Qwen-VL-Models/Qwen2-VL-Chat-Finetuned", 
                 adapter_path = "./Qwen-VL/Qwen-VL-Adapters/qwen2-vl-chat-finetuned-geolocrag-adapter"):
+        self.bnb_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_compute_dtype=torch.bfloat16,
+            bnb_4bit_use_double_quant=True,
+            bnb_4bit_quant_type="nf4"
+        )
+
         self.model = Qwen2VLForConditionalGeneration.from_pretrained(
             base_model_path,
-            device_map="auto",
             dtype=torch.bfloat16,
+            quantization_config=self.bnb_config,
+            device_map="auto"
         )
+        
         self.processor = Qwen2VLProcessor.from_pretrained(base_model_path)
 
-        self.model  = PeftModel.from_pretrained(self.model, adapter_path, device_map="auto", dtype=torch.bfloat16)
+        self.model  = PeftModel.from_pretrained(self.model, adapter_path)
+        self.model = self.model.merge_and_unload()
 
         self.model.eval()
 
@@ -83,4 +93,4 @@ if __name__ == "__main__":
     adapter_path = args.adapter_path
 
     infernce_pipe = InferencePipeline(base_model_path = base_model, adapter_path =adapter_path)
-    infernce_pipe.infer_finetuned(img_path)
+    print(infernce_pipe.infer_finetuned(img_path))
