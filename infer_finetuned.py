@@ -3,6 +3,7 @@ from PIL import Image
 import torch
 from peft import PeftModel
 import argparse
+import json
 
 class InferencePipeline:
     def __init__(self, 
@@ -29,7 +30,7 @@ class InferencePipeline:
 
         self.model.eval()
 
-    def infer_finetuned(self,imagepath, custom_instruction = None):
+    def predict(self,imagepath, custom_instruction = None):
         # Format instruction
         if not custom_instruction:
 
@@ -81,6 +82,60 @@ class InferencePipeline:
 
         return output_text
 
+    def predict_batch(self, jsonl_path, output_path=None):
+        """
+        Predict on multiple images from JSONL file.
+        
+        Args:
+            jsonl_path: Path to JSONL file with image_path field
+            output_path: Path to save results (optional)
+        
+        Returns:
+            list of prediction results
+        """
+        results = []
+        
+        print(f"Processing batch from: {jsonl_path}\n")
+        
+        with open(jsonl_path, 'r', encoding='utf-8') as f:
+            for idx, line in enumerate(f, 1):
+                try:
+                    item = json.loads(line.strip())
+                    image_path = item.get("image_path")
+                    
+                    if not image_path:
+                        print(f" Line {idx}: No image_path, skipping")
+                        continue
+                    
+                    print(f"[{idx}] Processing: {image_path}")
+                    
+                    # Predict
+                    result = self.predict(image_path)
+                    
+                    
+                    results.append(result)
+                    
+                    # Print prediction
+                    if "error" not in result:
+                        print(f"Prediction: {result['prediction'][:100]}...")
+                    else:
+                        print(f"Error: {result['error']}")
+                    print()
+                    
+                except json.JSONDecodeError as e:
+                    print(f"Line {idx}: JSON error - {e}\n")
+                except Exception as e:
+                    print(f"Line {idx}: Error - {e}\n")
+        
+        # Save results
+        if output_path and results:
+            with open(output_path, 'w', encoding='utf-8') as f:
+                json.dump(results, f, indent=2, ensure_ascii=False)
+            print(f"Results saved to: {output_path}")
+        
+        print(f"\nBatch complete: {len(results)} predictions")
+        return results
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fintune argument parser")
     parser.add_argument("--base_model_path", type =str, required=True)
@@ -93,4 +148,4 @@ if __name__ == "__main__":
     adapter_path = args.adapter_path
 
     infernce_pipe = InferencePipeline(base_model_path = base_model, adapter_path =adapter_path)
-    print(infernce_pipe.infer_finetuned(img_path))
+    print(infernce_pipe.predict(img_path))
