@@ -6,7 +6,7 @@ CS 762 Deep Learning project. Learn to geolocate with retrieval and reasoning.
 GeolocRAG combines retrieval-augmented pipelines and language-model reasoning to infer geographic location from visual and textual clues. The repository contains code for building a retrieval index, finetuning and running reasoning models, inference scripts for both baseline and finetuned models, and evaluation utilities.
 
 ## Key Files and Directories
-
+-`GeoLocPipeline.py` :End-to-end pipeline tying retrieval, reasoning, and inference together.
 - `edit.py`: Utility for preparing or editing datasets/configurations.
 - `eval.py`: Evaluation script — compares predictions to ground truth and computes project metrics (distance error, accuracy@k, etc.).
 - `finetune.py`: General finetuning script for model training.
@@ -14,8 +14,7 @@ GeolocRAG combines retrieval-augmented pipelines and language-model reasoning to
 - `index.index`: Prebuilt retrieval index — skip rebuilding if up-to-date.
 - `infer.py`: Baseline inference script for running model predictions.
 - `infer_finetuned.py`: Inference wrapper that loads a finetuned model and runs predictions on inputs.
-- `rag_retrive_builder.py`: Build or update the retrieval index from datasets.
-- `ragpipe.py`: End-to-end pipeline tying retrieval, reasoning, and inference together.
+- `rag_retrive_builder.py` & `ragpipe.py`: Build or update the retrieval index from datasets.
 - `reasoningLM.py`: Wrapper/utilities for the reasoning language model component.
 - `train_geo_reasoning.sh`: Shell script to launch geolocation reasoning model training (often contains training flags for distributed runs).
 - `qwenvldownload.py`: Helpers to download Qwen-related datasets or checkpoints.
