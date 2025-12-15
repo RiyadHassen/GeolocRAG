@@ -1,0 +1,293 @@
+%!LW recipe=latexmk (lualatex)
+% Unofficial UW-Madison Poster template.
+% A fork of https://www.overleaf.com/latex/templates/university-of-michigan-umich-poster-template/xpnqzzxwbjzc
+% which is a fork of the MSU template https://www.overleaf.com/latex/templates/an-unofficial-poster-template-for-michigan-state-university/wnymbgpxnnwd
+% which is a fork of https://www.overleaf.com/latex/templates/an-unofficial-poster-template-for-new-york-university/krgqtqmzdqhg
+% which is a fork of https://github.com/anishathalye/gemini
+% also refer to https://github.com/k4rtik/uchicago-poster
+
+
+
+\documentclass[final]{beamer}
+
+% ====================
+% Packages
+% ====================
+
+\usepackage[T1]{fontenc}
+% \usepackage[utf8]{luainputenc} % <-- remove this!
+\usepackage{lmodern}
+\usepackage[size=custom, width=150,height=107, scale=1]{beamerposter}
+\usetheme{gemini}
+\usecolortheme{uwmadison}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usepackage{anyfontsize}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\newfontfamily\scfont{Latin Modern Roman}
+\newcommand{\NaviClues}{\textsc{NaviClues}}
+
+% ====================
+% Lengths
+% ====================
+
+% If you have N columns, choose \sepwidth and \colwidth such that
+% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.025\paperwidth}
+\setlength{\colwidth}{0.3\paperwidth}
+
+\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+
+% ====================
+% Title
+% ====================
+
+\title{Improving VLM Geo-Localization with Retrieval and Reasoning}
+
+\author{
+  Bofeng Cao\textsuperscript{$\dagger$},
+  Nick Boddy\textsuperscript{$\ast$},
+  Prajjwal Gandharv\textsuperscript{$\ast$},
+  Riyad Hassen\textsuperscript{$\ast$}\\
+  \small Author names are listed in alphabetical order.
+}
+
+\institute[UW--Madison]{Department of Computer Sciences\textsuperscript{$\ast$}, Electrical and Computer Engineering\textsuperscript{$\dagger$}, University of Wisconsin--Madison}
+
+% ====================
+% Footer (optional)
+% ====================
+
+\footercontent{
+  \href{https://github.com}{Github: github.com/Nick-Boddy/GeolocRAG} \hfill
+CS 762: Deep Learning \hfill
+  %\href{mailto:youremail@wisc.edu}{youremail@wisc.edu}
+  }
+% (can be left out to remove footer)
+
+% ====================
+% Logo (optional)
+% ====================
+
+% use this to include logos on the left and/or right side of the header:
+% Left: institution
+ % \logoright{\includegraphics[height=8cm]{logos/outline-center-UWlogo-print.png}}
+ \logoright{\includegraphics[height=8cm]{logos/color-center-reverse-UWlogo-print.png}}
+% Right: funding agencies and other affilations 
+%\logoright{\includegraphics[height=7cm]{logos/NSF.eps}}
+% ====================
+% Body
+% ====================
+
+\begin{document}
+
+
+
+\begin{frame}[t]
+\begin{columns}[t]
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+  \begin{block}{Introduction}
+
+    Image geo-localization is the task of deciding geographic location of an image using only its visual cues. Immediate applications span mapping and navigation, augmented reality, media management (e.g., clustering and tagging photos by location), crisis response, and digital forensics.
+
+    At the same time, the ability to localize everyday photos raises safety, privacy, and misinformation concerns. Accurate models can infer where people live, work, or travel, from seemingly benign social-media posts, which enables unsolicited tracking or even targeted harm. Fake or out-of-context images can also be used to misrepresent where events occurred, making fabricated evidence harder to spot at scale.
+
+    In this project, we study VLM-based geo-localization in two directions: (i) detecting geographically-inconsistent or fake images, and (ii) augmenting existing geo-localization methods with reasoning (CoT) and retrieval (RAG).
+
+    \begin{figure}
+      \centering
+                    \includegraphics[width=0.8\textwidth]{poster-gemini/figures/GeoGussr.png}
+                    \caption{GeoGuessr: geo-localization framed as an online game, where players compete for score measured by distance from target. The 2013 game found a surge in popularity in 2021 which lended to a wide development of interest and ``expertise'' in geo-localization.}
+    \end{figure}
+
+  \end{block}
+
+    \begin{block}{Background \& Related Work}
+        With the rapid development of vision-language models (VLMs), a growing body of research has begun to explore their capabilities for geo-localization, achieving impressive progress in recent years \cite{LiuDDLZSZG25, jia2024g3, jia2025georanker, li2024georeasoner, zhou2024img2loc}. 
+        These methods leverage the strong semantic understanding and cross-modal alignment of VLMs to infer geographic clues from street-view imagery.
+        
+        Among them, \textbf{GeoRanker}\cite{jia2025georanker} stands out by introducing a distance-aware ranking framework for fine-grained geo-localization, achieving state-of-the-art performance in predicting precise geographic coordinates.
+        
+        On the other hand, \textbf{GeoReasoner}\cite{li2024georeasoner} and subsequent work by Liu et al.\cite{LiuDDLZSZG25} emphasize the reasoning abilities of VLMs in geo-localization. These approaches not only predict the final geographic position but also elicit explicit reasoning chains that justify the prediction.
+    \end{block}
+  
+  \begin{alertblock}{Motivation \& Problem}
+
+    \begin{figure}
+      \centering
+        \includegraphics[width=1.0\textwidth]{poster-gemini/figures/motivation.png}
+        \caption{Expert vs. VLM}
+    \end{figure}
+    An Expert GeoGuessr\cite{geoguessr} player typically identifies location cues by integrating diverse visual evidence—such as vegetation types, climatic signatures, terrain and landform characteristics, architectural styles, and their spatial relationships—to narrow down the geographic search space.
+
+    In contrast, it is uncertain whether current VLMs follow comparable reasoning processes or whether their apparent success primarily stems from memorization and output regularization.
+
+    Due in part to this motivation, we create the \emph{GeoConflict} dataset for a new task that we believe may improve generalization to geo-localization.
+        \begin{itemize}
+            \item \textbf{GeoConflict.} We use a VLM-driven image editing model to inject \emph{conflicting geographic attributes} into real street-view images. An example might be replacing a coniferous tree in a Wisconsin scene with a palm tree.
+            \item \textbf{Geographic Self-Consistency.} Decide/reason whether a given image is self-consistent with its geography, or if it is fake.
+            \item \textbf{GeoConflict fine-tuning.}
+            We replace 10 percent of the original GeoReasoner training data with GeoConflict samples and fine-tune the model to improve its ability to resolve geographic inconsistencies.
+
+        \end{itemize}
+  \end{alertblock}
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+  \begin{block}{Example Results}
+    \begin{figure}
+      \centering
+        \includegraphics[width=1.0\textwidth]{poster-gemini/figures/Example Results.png}
+        \caption{Results Comparison between GeoReasoner and Our's on a GeoConflict task.}
+    \end{figure}
+    
+
+  \end{block}
+  
+
+  \begin{block}{Dataset}
+
+  \textbf{\NaviClues} - includes panoramic image, (lat,long) pairs, and reasoning.
+  
+  \textbf{Guidebooks} - contains an image-text pair from the \textit{Plonk It} Guide to GeoGuessr website. We used it for training a CLIP encoder for the RAG pipeline. 
+    \begin{figure}
+    \centering
+    \begin{minipage}{0.48\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{poster-gemini/figures/NavigCluesDataDistribution.png}
+      \caption{Location distribution of \NaviClues, covering a wide range of countries around the world.}
+    \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{poster-gemini/figures/plonkit.png}
+      \caption{Coverage of the Plonk It community guide as of November 2025. Cyan color indicates work in progress.}
+    \end{minipage}
+  \end{figure}
+      
+  \end{block}
+
+  \begin{block}{Methodology}
+    We follow a similar strategy used in the NAVIG, ETHAN, and GeoReasoner paper. There are three main components:
+    
+    1. \textbf{Reasoner}  - Given Image $I$, a VLM generates reasoning $R$, which includes a textual description of the image.
+
+    2. \textbf{Retrieval Stage} - We encode images from the \textit{Plonk It} dataset with the CLIP model for the purpose of retrieving similar image locations from the database. FAISS (Facebook AI Similarity Search) as a vector database for the RAG pipeline  with $L_2$ distance for retrieving from the vector database
+    $d$ = \argmin \| x - x_i\| _2.
+
+    3. \textbf{Prediction Stage} - In conjunction with the retrieved information from stages 1 and 2, the original image is passed to a VLM to predict the final location. $\hat{Y} := \text{VLM}_P (I, \text{concat}(R,K))$.
+
+    \begin{figure}
+      \centering
+        \includegraphics[width=0.7\textwidth]{poster-gemini/figures/Navig-arch.png}
+
+      \caption{NAVIG Architecture}
+    \end{figure}
+
+  \end{block}
+
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+  % \begin{block}{Dataset and VLM MODEL Selection}
+  %      \begin{figure}
+  %          \centering
+  %          \includegraphics[width=0.5\linewidth]{poster-gemini/figures/results.png}
+  %          \caption{Caption}
+  %          \label{fig:placeholder}
+  %      \end{figure}
+  % \end{block}
+
+  \begin{block}{GeoConflict Generation}
+    To construct the GeoConflict dataset, we begin by providing a real-world street-view (GSV) image to a VLM. The VLM is prompted to identify and describe the geographic cues present in the scene. These cues span multiple categories, including architectural style, landform features, vegetation types, transportation infrastructure, and cultural or commercial indicators.
+
+    Next, we randomly select one geographic cue from a chosen category and replace it with a conflicting cue. This replacement cue is determined by our custom RAG system, which integrates (1) a classifier that categorizes geographic cues and (2) a fine-tuned CLIP model that retrieves plausible yet contradictory cues.
+    
+    Finally, the conflicting cue is converted into a text prompt and, together with the original street-view image, is sent to a VLM-based image editing model. This model generates the modified image, resulting in a GeoConflict sample that intentionally embeds mismatched or geographically inconsistent elements.
+    \begin{figure}
+      \centering
+        \includegraphics[width=1.0\textwidth]{poster-gemini/figures/GeoConflict Pipeline.png}
+        \caption{Pipeline of GeoConflict Data Generation}
+    \end{figure}
+  \end{block}
+
+    
+    \begin{block}{Experiment Details}
+    We conduct experiments on Geo-Localization and Geographic Self-Consistency following the original GeoReasoner setup, and use Qwen-VL-Chat as our baseline VLM. To construct the GeoConflict dataset, we use GPT-4o for image description and modification-prompt generation, and qwen-image-edit as the image editing model. The model selections are summarized in Table~\ref{tab:config}.
+    \begin{table}[h]
+    \centering
+    \footnotesize
+    \begin{tabular}{lll}
+    \toprule
+    \textbf{Component / Task} & \textbf{Model Used} & \textbf{Purpose} \\
+    \midrule
+    Baseline VLM & Qwen-VL-Chat & Geo-Localization and Geographic Self-Consistency \\
+    Fine-tuning backbone & Qwen-VL-Chat & Fine-tuned with 10 percent GeoConflict samples \\
+    Image description / Modification & GPT-4o & Generate modification prompts for GeoConflict \\
+    Image editing model & qwen-image-edit & Inject conflicting geographic attributes \\
+    \bottomrule
+    \end{tabular}
+    \caption{Model configurations used in our experiments.}
+    \label{tab:config}
+    \end{table}
+
+    We conducted all training and testing on Nvidia Ada 6000 GPUs (48GB) using CUDA 12.1, PyTorch 2.3.1, and Transformers 4.33.0. The detailed training configurations for our GeoReasoner variants are summarized in Table~\ref{tab:train_details}.
+    \begin{table}[h]
+    \centering
+    \footnotesize
+    \begin{tabular}{lccccc}
+    \toprule
+    \textbf{Model Variant} & \textbf{Training Speed} & \textbf{Inference Latency} & \textbf{\#Params} & \textbf{LoRA Params} & \textbf{FLOPs} \\
+    \midrule
+    LoRA1 (reason)   & 0.3 samples/s & 2.20 s & 9.6B & 112.19M & 71.9B \\
+    LoRA2 (location) & 0.4 samples/s & 1.20 s & 9.6B & 112.19M & 71.9B \\
+    \bottomrule
+    \end{tabular}
+    \caption{Training details of the proposed GeoReasoner variants.}
+    \label{tab:train_details}
+    \end{table}    
+    \end{block}
+
+
+
+\begin{block}{Limitations \& Future Work}
+    Our current approach has several limitations.
+    \begin{itemize}
+      \item Eliciting reasoning through free-form explanations makes it difficult to quantitatively assess the model's true geographic reasoning ability.
+      \item Our current evaluation focuses mainly on city-level localization and reasoning about natural vegetation, leaving broader geographic contexts underexplored.
+    \end{itemize}
+
+    To address these limitations, we plan to incorporate Process Reward Models\cite{lightman2023lets,zeng2025versaprm} (PRMs) to provide a more principled and quantitative evaluation framework. Rather than asking the model to directly output a single ``reason'', we will generate multiple Chain-of-Thought (CoT) traces and score them step-by-step using a PRM. Formally, given a CoT $S = (s_1, s_2, \dots, s_k)$ consisting of $k$ reasoning steps, a PRM maps the entire sequence to a $k$-dimensional reward vector $\text{PRM}(S) \in [0,1]^k$, where the $i$-th component $\text{PRM}(S)_i$ represents the predicted correctness of step $s_i$. This allows us to evaluate geographic reasoning in a more fine-grained and scalable manner. 
+\end{block}
+
+  \begin{block}{References}
+    \nocite{*}
+    \footnotesize
+    \bibliographystyle{ieeetr}
+    \bibliography{poster}
+  \end{block}
+\end{column}
+
+\separatorcolumn
+\end{columns}
+\end{frame}
+
+\end{document}
