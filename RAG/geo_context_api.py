@@ -1,18 +1,18 @@
 import requests, json, os
 from typing import Dict
 
-OVERPASS_URL = "https://overpass-api.de/api/interpreter"
-CACHE_PATH = "RAG/overpass_cache.json" # local cache file
+overpass_url = "https://overpass-api.de/api/interpreter"
+cache_path = "RAG/overpass_cache.json" # local cache file
 
 def _load_cache():
-    if os.path.exists(CACHE_PATH):
-        with open(CACHE_PATH, "r", encoding="utf-8") as f:
+    if os.path.exists(cache_path):
+        with open(cache_path, "r", encoding="utf-8") as f:
             return json.load(f)
     return {}
 
 def _save_cache(cache: Dict[str, str]):
-    os.makedirs(os.path.dirname(CACHE_PATH), exist_ok=True)
-    with open(CACHE_PATH, "w", encoding="utf-8") as f:
+    os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+    with open(cache_path, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
 def overpass_tags_nearby(lat: float, lon: float, radius_m: int = 250):
@@ -32,7 +32,7 @@ def overpass_tags_nearby(lat: float, lon: float, radius_m: int = 250):
     """
 
     try:
-        r = requests.post(OVERPASS_URL, data=query.encode("utf-8"), timeout=30)
+        r = requests.post(overpass_url, data=query.encode("utf-8"), timeout=30)
         r.raise_for_status()
         data = r.json()
     except Exception as e:
