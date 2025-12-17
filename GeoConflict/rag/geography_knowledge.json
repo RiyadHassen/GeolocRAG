@@ -1,0 +1,69 @@
+{
+  "architecture": [
+    {
+      "id": "arch_001",
+      "name": "Traditional East Asian wooden architecture",
+      "description": "Buildings with wooden frames, curved tiled roofs, and exposed beams, commonly found in East Asia.",
+      "region": ["East Asia"],
+      "visualizable": true
+    },
+    {
+      "id": "arch_002",
+      "name": "Mediterranean stone architecture",
+      "description": "Light-colored stone buildings with flat roofs and small windows, typical of coastal Mediterranean regions.",
+      "region": ["Southern Europe"],
+      "visualizable": true
+    }
+  ],
+
+  "climate": [
+    {
+      "id": "climate_001",
+      "name": "Arid desert climate",
+      "description": "Extremely dry conditions with minimal rainfall, clear skies, and intense sunlight.",
+      "zone": ["Desert"],
+      "visualizable": true
+    },
+    {
+      "id": "climate_002",
+      "name": "Subarctic climate",
+      "description": "Long, harsh winters with snow-covered landscapes and short, cool summers.",
+      "zone": ["Subarctic"],
+      "visualizable": true
+    }
+  ],
+
+  "vegetation": [
+    {
+      "id": "veg_001",
+      "name": "Saguaro cactus desert vegetation",
+      "description": "Tall saguaro cacti sparsely distributed across sandy desert terrain.",
+      "biome": ["Desert"],
+      "visualizable": true
+    },
+    {
+      "id": "veg_002",
+      "name": "Dense tropical rainforest vegetation",
+      "description": "Lush, dense vegetation with tall evergreen trees, broad leaves, and thick undergrowth.",
+      "biome": ["Tropical rainforest"],
+      "visualizable": true
+    }
+  ],
+
+  "landmark": [
+    {
+      "id": "landmark_001",
+      "name": "Eiffel Tower",
+      "description": "A wrought-iron lattice tower located in Paris, France.",
+      "region": ["Western Europe"],
+      "visualizable": true
+    },
+    {
+      "id": "landmark_002",
+      "name": "Great Pyramid of Giza",
+      "description": "An ancient pyramid constructed from limestone blocks, located in Egypt.",
+      "region": ["North Africa"],
+      "visualizable": true
+    }
+  ]
+}

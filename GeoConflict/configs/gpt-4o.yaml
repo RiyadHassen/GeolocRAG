@@ -1,0 +1,5 @@
+provider: openai
+model: gpt-4o
+
+# API key is read from environment variable
+api_key_env: OPENAI_API_KEY

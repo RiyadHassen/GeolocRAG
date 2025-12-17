@@ -1,0 +1,5 @@
+provider: dashscope
+model: qwen-image-edit-plus
+
+api_key_env: DASHSCOPE_API_KEY
+base_url: https://dashscope-intl.aliyuncs.com/api/v1

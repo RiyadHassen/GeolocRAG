@@ -1,0 +1,5 @@
+{
+  "name": "geography_description",
+  "description": "Analyze a street view image from a human geography perspective.",
+  "prompt": "Please analyze this street view image from a human geography perspective and respond using the following structure:\n\n1. Architectural style\n2. Climate characteristics\n3. Vegetation\n4. Landmark or urban features\n\nRequirements:\n- Use 2–4 sentences per item\n- Base reasoning strictly on visible evidence\n- Avoid unsupported speculation\n- Maintain an academic tone"
+}

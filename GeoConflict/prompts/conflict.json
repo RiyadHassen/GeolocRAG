@@ -1,0 +1,5 @@
+{
+  "name": "geography_conflict",
+  "description": "Generate an image-edit instruction that introduces a strong geographic conflict by modifying exactly one aspect.",
+  "prompt_template": "[Original image description]\n{original}\n\n[Target aspect to modify]\n{category}\n\n[Text span related to this aspect]\n{span}\n\n[Candidate conflicting concepts (retrieved)]\n{candidates}\n\nTask:\n- Choose ONE candidate that creates a strong geographic conflict with the original description\n- The conflict must be geographically implausible but visually conceivable\n- Generate a concise image-edit instruction suitable for an image editing model\n- Modify ONLY the target aspect\n- Do NOT change other aspects of the scene\n- Do NOT mention analysis, alternatives, or that this is a modification\n\nOutput:\n- One concise image-edit instruction"
+}

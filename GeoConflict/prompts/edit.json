@@ -1,0 +1,5 @@
+{
+  "name": "image_edit_instruction",
+  "description": "Instruction for image editing models.",
+  "prompt_template": "{instruction}"
+}
