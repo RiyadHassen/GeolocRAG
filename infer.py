@@ -8,7 +8,7 @@ import json
 from tqdm import tqdm
 import time
 
-def infer_model(model_path="./Qwen-VL/Qwen-VL-Models/Qwen-VL-Chat"):
+def infer_model(img_path,model_path="./Qwen-VL/Qwen-VL-Models/Qwen-VL-Chat"):
     tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True, local_files_only=True)
     model = AutoModelForCausalLM.from_pretrained(model_path, device_map="cuda:1", trust_remote_code=True, local_files_only=True).eval()
 
@@ -19,7 +19,7 @@ def infer_model(model_path="./Qwen-VL/Qwen-VL-Models/Qwen-VL-Chat"):
 
     model.generation_config = GenerationConfig.from_pretrained(model_path, trust_remote_code=True)
 
-    img_path = "./test-coconuts.png"
+    #img_path = "./test-coconuts.png"
 
     # query = tokenizer.from_list_format([
     #             {'image': img_path}, 
@@ -115,6 +115,7 @@ def infer_model(model_path="./Qwen-VL/Qwen-VL-Models/Qwen-VL-Chat"):
     
     response, history = model.chat(tokenizer, query=query, history=None)
     print(img_path, response)
+    return response
 
 if __name__ == "__main__":
     infer_model()

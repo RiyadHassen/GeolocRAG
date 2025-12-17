@@ -1,0 +1,3537 @@
+{
+  "summary": {
+    "total_samples": 100,
+    "valid_predictions": 100,
+    "failed_predictions": 0,
+    "distance_km": {
+      "mean": 798.8602054861491,
+      "median": 129.00865941321834,
+      "min": 1.135926001007576,
+      "max": 9745.121582751666,
+      "std": 1912.0031335216606
+    },
+    "geoguessr_score": {
+      "mean": 4096.53,
+      "median": 4696,
+      "total": 409653,
+      "min": 38,
+      "max": 4997
+    },
+    "city_accuracy": {
+      "name_match": 42.0,
+      "geocoded_match": 42.0
+    },
+    "country_accuracy": {
+      "match": 94.0
+    },
+    "distance_thresholds": {
+      "within_1km": 0.0,
+      "within_25km": 37.0,
+      "within_200km": 60.0,
+      "within_750km": 81.0,
+      "within_2500km": 93.0
+    }
+  },
+  "detailed_results": [
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Colorado Springs_ (38.864816, -104.76129).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Colorado Springs",
+        "continent": "North America",
+        "latitude": 38.8897,
+        "longitude": -104.884,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Colorado Springs\",\n    \"latitude\": 38.8897,\n    \"longitude\": -104.884\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 38.864816,
+        "longitude": -104.76129,
+        "city": "Colorado Springs",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 10.976782407130338,
+        "geoguessr_score": 4972,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 38.8897,
+          "longitude": -104.884
+        },
+        "pred_city": "Colorado Springs",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Colorado Springs",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Milwaukee_ (43.039906, -87.974215).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Chicago",
+        "continent": "North America",
+        "latitude": 41.8781,
+        "longitude": -87.6298,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Chicago\",\n    \"latitude\": 41.8781,\n    \"longitude\": -87.6298\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 43.039906,
+        "longitude": -87.974215,
+        "city": "Milwaukee",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 132.24017646809963,
+        "geoguessr_score": 4680,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 41.8781,
+          "longitude": -87.6298
+        },
+        "pred_city": "Chicago",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Milwaukee",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Seattle_ (47.599696, -122.308098).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Seattle",
+        "continent": "North America",
+        "latitude": 47.6062,
+        "longitude": -122.3329,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Seattle\",\n    \"latitude\": 47.6062,\n    \"longitude\": -122.3329\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 47.599696,
+        "longitude": -122.308098,
+        "city": "Seattle",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1.9952109075815885,
+        "geoguessr_score": 4995,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 47.6062,
+          "longitude": -122.3329
+        },
+        "pred_city": "Seattle",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Seattle",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Los Angeles_ (34.001196, -118.391719).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Diego",
+        "continent": "North America",
+        "latitude": 32.8185,
+        "longitude": -117.1588,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Diego\",\n    \"latitude\": 32.8185,\n    \"longitude\": -117.1588\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 34.001196,
+        "longitude": -118.391719,
+        "city": "Los Angeles",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 174.32756862509555,
+        "geoguessr_score": 4582,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 32.8185,
+          "longitude": -117.1588
+        },
+        "pred_city": "San Diego",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Los Angeles",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Tulsa_ (36.122886, -95.905874).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Tulsa",
+        "continent": "North America",
+        "latitude": 36.1052,
+        "longitude": -95.9498,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Tulsa\",\n    \"latitude\": 36.1052,\n    \"longitude\": -95.9498\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 36.122886,
+        "longitude": -95.905874,
+        "city": "Tulsa",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 4.40872042553947,
+        "geoguessr_score": 4988,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 36.1052,
+          "longitude": -95.9498
+        },
+        "pred_city": "Tulsa",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Tulsa",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Fresno_ (36.773305, -119.810457).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Francisco",
+        "continent": "North America",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Francisco\",\n    \"latitude\": 37.7749,\n    \"longitude\": -122.4194\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 36.773305,
+        "longitude": -119.810457,
+        "city": "Fresno",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 256.29505156850666,
+        "geoguessr_score": 4398,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "pred_city": "San Francisco",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Fresno",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Los Angeles_ (34.016757, -118.419281).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Los Angeles",
+        "continent": "North America",
+        "latitude": 34.0522,
+        "longitude": -118.2436,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Los Angeles\",\n    \"latitude\": 34.0522,\n    \"longitude\": -118.2436\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 34.016757,
+        "longitude": -118.419281,
+        "city": "Los Angeles",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 16.66135515512536,
+        "geoguessr_score": 4958,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 34.0522,
+          "longitude": -118.2436
+        },
+        "pred_city": "Los Angeles",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Los Angeles",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Tulsa_ (36.116532, -95.910785).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Tulsa",
+        "continent": "North America",
+        "latitude": 36.1018,
+        "longitude": -95.9488,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Tulsa\",\n    \"latitude\": 36.1018,\n    \"longitude\": -95.9488\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 36.116532,
+        "longitude": -95.910785,
+        "city": "Tulsa",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 3.787600305017663,
+        "geoguessr_score": 4990,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 36.1018,
+          "longitude": -95.9488
+        },
+        "pred_city": "Tulsa",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Tulsa",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Indianapolisg_ (39.772141, -86.151708).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Boston",
+        "continent": "North America",
+        "latitude": 42.3601,
+        "longitude": -71.0589,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Boston\",\n    \"latitude\": 42.3601,\n    \"longitude\": -71.0589\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 39.772141,
+        "longitude": -86.151708,
+        "city": "Indianapolisg",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1295.736636310598,
+        "geoguessr_score": 2615,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 42.3601,
+          "longitude": -71.0589
+        },
+        "pred_city": "Boston",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Indianapolisg",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Minneapolis_ (44.957412, -93.271613).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "New York",
+        "continent": "North America",
+        "latitude": 40.78315,
+        "longitude": -73.9654,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"New York\",\n    \"latitude\": 40.78315,\n    \"longitude\": -73.9654\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 44.957412,
+        "longitude": -93.271613,
+        "city": "Minneapolis",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1635.8628353735392,
+        "geoguessr_score": 2206,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 40.78315,
+          "longitude": -73.9654
+        },
+        "pred_city": "New York",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Minneapolis",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Los Angeles_ (33.999337, -118.385683).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Los Angeles",
+        "continent": "North America",
+        "latitude": 34.0522,
+        "longitude": -118.3618,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Los Angeles\",\n    \"latitude\": 34.0522,\n    \"longitude\": -118.3618\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 33.999337,
+        "longitude": -118.385683,
+        "city": "Los Angeles",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 6.276650762053639,
+        "geoguessr_score": 4984,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 34.0522,
+          "longitude": -118.3618
+        },
+        "pred_city": "Los Angeles",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Los Angeles",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Fort Worth_ (32.77886, -97.366526).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Dallas",
+        "continent": "North America",
+        "latitude": 32.7818,
+        "longitude": -96.7586,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Dallas\",\n    \"latitude\": 32.7818,\n    \"longitude\": -96.7586\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 32.77886,
+        "longitude": -97.366526,
+        "city": "Fort Worth",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 56.834292566720194,
+        "geoguessr_score": 4859,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 32.7818,
+          "longitude": -96.7586
+        },
+        "pred_city": "Dallas",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Fort Worth",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Long Beach_ (33.797797, -118.156279).jpg",
+      "prediction": {
+        "country": "United Kingdom",
+        "city": "London",
+        "continent": "Europe",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"Europe\",\n    \"country\": \"United Kingdom\",\n    \"city\": \"London\",\n    \"latitude\": 51.5074,\n    \"longitude\": -0.1278\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 33.797797,
+        "longitude": -118.156279,
+        "city": "Long Beach",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 8774.527439485504,
+        "geoguessr_score": 62,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": false,
+        "pred_coords": {
+          "latitude": 51.5074,
+          "longitude": -0.1278
+        },
+        "pred_city": "London",
+        "pred_country": "United Kingdom",
+        "gt_location": {
+          "city": "Long Beach",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Mesa_ (33.41264, -111.728375).jpg",
+      "prediction": {
+        "country": "United Kingdom",
+        "city": "London",
+        "continent": "Europe",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"Europe\",\n    \"country\": \"United Kingdom\",\n    \"city\": \"London\",\n    \"latitude\": 51.5074,\n    \"longitude\": -0.1278\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 33.41264,
+        "longitude": -111.728375,
+        "city": "Mesa",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 8465.156614758904,
+        "geoguessr_score": 72,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": false,
+        "pred_coords": {
+          "latitude": 51.5074,
+          "longitude": -0.1278
+        },
+        "pred_city": "London",
+        "pred_country": "United Kingdom",
+        "gt_location": {
+          "city": "Mesa",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/El Paso_ (31.857979, -106.441323).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "El Paso",
+        "continent": "North America",
+        "latitude": 31.777778,
+        "longitude": -105.933333,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"El Paso\",\n    \"latitude\": 31.777778,\n    \"longitude\": -105.933333\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 31.857979,
+        "longitude": -106.441323,
+        "city": "El Paso",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 48.819066862409684,
+        "geoguessr_score": 4879,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 31.777778,
+          "longitude": -105.933333
+        },
+        "pred_city": "El Paso",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "El Paso",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Seattle_ (47.626408, -122.301295).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Seattle",
+        "continent": "North America",
+        "latitude": 47.6218,
+        "longitude": -122.3431,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Seattle\",\n    \"latitude\": 47.6218,\n    \"longitude\": -122.3431\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 47.626408,
+        "longitude": -122.301295,
+        "city": "Seattle",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 3.1746747481378264,
+        "geoguessr_score": 4992,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 47.6218,
+          "longitude": -122.3431
+        },
+        "pred_city": "Seattle",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Seattle",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/San Antonio_ (29.454423, -98.521531).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Antonio",
+        "continent": "North America",
+        "latitude": 29.4997,
+        "longitude": -98.4997,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Antonio\",\n    \"latitude\": 29.4997,\n    \"longitude\": -98.4997\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 29.454423,
+        "longitude": -98.521531,
+        "city": "San Antonio",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 5.460110385415551,
+        "geoguessr_score": 4986,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 29.4997,
+          "longitude": -98.4997
+        },
+        "pred_city": "San Antonio",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "San Antonio",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Louisvillel_ (38.169881, -85.666293).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Cincinnati",
+        "continent": "North America",
+        "latitude": 39.1547,
+        "longitude": -84.5069,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Cincinnati\",\n    \"latitude\": 39.1547,\n    \"longitude\": -84.5069\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 38.169881,
+        "longitude": -85.666293,
+        "city": "Louisvillel",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 148.74253828221288,
+        "geoguessr_score": 4641,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 39.1547,
+          "longitude": -84.5069
+        },
+        "pred_city": "Cincinnati",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Louisvillel",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Las Vegas_ (36.24095, -115.251895).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Las Vegas",
+        "continent": "North America",
+        "latitude": 36.1053,
+        "longitude": -115.2388,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Las Vegas\",\n    \"latitude\": 36.1053,\n    \"longitude\": -115.2388\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 36.24095,
+        "longitude": -115.251895,
+        "city": "Las Vegas",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 15.12932064300635,
+        "geoguessr_score": 4962,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 36.1053,
+          "longitude": -115.2388
+        },
+        "pred_city": "Las Vegas",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Las Vegas",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Tucson_ (32.130998, -110.892809).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Tucson",
+        "continent": "North America",
+        "latitude": 32.2187,
+        "longitude": -110.6875,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Tucson\",\n    \"latitude\": 32.2187,\n    \"longitude\": -110.6875\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 32.130998,
+        "longitude": -110.892809,
+        "city": "Tucson",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 21.644710910776993,
+        "geoguessr_score": 4946,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 32.2187,
+          "longitude": -110.6875
+        },
+        "pred_city": "Tucson",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Tucson",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/San Diego_ (32.734318, -117.169995).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Los Angeles",
+        "continent": "North America",
+        "latitude": 34.0522,
+        "longitude": -118.2436,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Los Angeles\",\n    \"latitude\": 34.0522,\n    \"longitude\": -118.2436\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 32.734318,
+        "longitude": -117.169995,
+        "city": "San Diego",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 177.22242035162745,
+        "geoguessr_score": 4576,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 34.0522,
+          "longitude": -118.2436
+        },
+        "pred_city": "Los Angeles",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "San Diego",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Long Beach_ (33.802372, -118.187707).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Los Angeles",
+        "continent": "North America",
+        "latitude": 34.0522,
+        "longitude": -118.2436,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Los Angeles\",\n    \"latitude\": 34.0522,\n    \"longitude\": -118.2436\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 33.802372,
+        "longitude": -118.187707,
+        "city": "Long Beach",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 28.254202001451564,
+        "geoguessr_score": 4929,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 34.0522,
+          "longitude": -118.2436
+        },
+        "pred_city": "Los Angeles",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Long Beach",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Jacksonvillef_ (30.315912, -81.666395).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Antonio",
+        "continent": "North America",
+        "latitude": 29.4997,
+        "longitude": -98.4997,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Antonio\",\n    \"latitude\": 29.4997,\n    \"longitude\": -98.4997\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 30.315912,
+        "longitude": -81.666395,
+        "city": "Jacksonvillef",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1623.5627626664345,
+        "geoguessr_score": 2220,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 29.4997,
+          "longitude": -98.4997
+        },
+        "pred_city": "San Antonio",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Jacksonvillef",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Atlanta_ (33.743933, -84.411844).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Boston",
+        "continent": "North America",
+        "latitude": 42.3601,
+        "longitude": -71.0589,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Boston\",\n    \"latitude\": 42.3601,\n    \"longitude\": -71.0589\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 33.743933,
+        "longitude": -84.411844,
+        "city": "Atlanta",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1508.3883273279841,
+        "geoguessr_score": 2351,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 42.3601,
+          "longitude": -71.0589
+        },
+        "pred_city": "Boston",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Atlanta",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Raleigh_ (35.851903, -78.634985).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Atlanta",
+        "continent": "North America",
+        "latitude": 33.8488,
+        "longitude": -84.3884,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Atlanta\",\n    \"latitude\": 33.8488,\n    \"longitude\": -84.3884\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 35.851903,
+        "longitude": -78.634985,
+        "city": "Raleigh",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 570.1765650682153,
+        "geoguessr_score": 3759,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 33.8488,
+          "longitude": -84.3884
+        },
+        "pred_city": "Atlanta",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Raleigh",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Nashvillej_ (36.156594, -86.790101).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Atlanta",
+        "continent": "North America",
+        "latitude": 33.8488,
+        "longitude": -84.3994,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Atlanta\",\n    \"latitude\": 33.8488,\n    \"longitude\": -84.3994\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 36.156594,
+        "longitude": -86.790101,
+        "city": "Nashvillej",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 336.52444656254767,
+        "geoguessr_score": 4225,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 33.8488,
+          "longitude": -84.3994
+        },
+        "pred_city": "Atlanta",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Nashvillej",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Minneapolis_ (44.948374, -93.289056).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Minneapolis",
+        "continent": "North America",
+        "latitude": 44.9781,
+        "longitude": -93.0681,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Minneapolis\",\n    \"latitude\": 44.9781,\n    \"longitude\": -93.0681\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 44.948374,
+        "longitude": -93.289056,
+        "city": "Minneapolis",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 17.695623775760744,
+        "geoguessr_score": 4955,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 44.9781,
+          "longitude": -93.0681
+        },
+        "pred_city": "Minneapolis",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Minneapolis",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Oakland_ (37.758568, -122.211434).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Los Angeles",
+        "continent": "North America",
+        "latitude": 34.0522,
+        "longitude": -118.2436,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Los Angeles\",\n    \"latitude\": 34.0522,\n    \"longitude\": -118.2436\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 37.758568,
+        "longitude": -122.211434,
+        "city": "Oakland",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 545.3720336104847,
+        "geoguessr_score": 3806,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 34.0522,
+          "longitude": -118.2436
+        },
+        "pred_city": "Los Angeles",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Oakland",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Tampa_ (27.948517, -82.488112).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Orlando",
+        "continent": "North America",
+        "latitude": 28.5747,
+        "longitude": -81.3792,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Orlando\",\n    \"latitude\": 28.5747,\n    \"longitude\": -81.3792\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 27.948517,
+        "longitude": -82.488112,
+        "city": "Tampa",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 129.00865941321834,
+        "geoguessr_score": 4687,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 28.5747,
+          "longitude": -81.3792
+        },
+        "pred_city": "Orlando",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Tampa",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Chicago_ (41.850192, -87.683599).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Chicago",
+        "continent": "North America",
+        "latitude": 41.8781,
+        "longitude": -87.6298,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Chicago\",\n    \"latitude\": 41.8781,\n    \"longitude\": -87.6298\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 41.850192,
+        "longitude": -87.683599,
+        "city": "Chicago",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 5.4293603011405285,
+        "geoguessr_score": 4986,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 41.8781,
+          "longitude": -87.6298
+        },
+        "pred_city": "Chicago",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Chicago",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Louisvillel_ (38.186947, -85.636512).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Cincinnati",
+        "continent": "North America",
+        "latitude": 39.1547,
+        "longitude": -84.5018,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Cincinnati\",\n    \"latitude\": 39.1547,\n    \"longitude\": -84.5018\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 38.186947,
+        "longitude": -85.636512,
+        "city": "Louisvillel",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 145.88775614160653,
+        "geoguessr_score": 4648,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 39.1547,
+          "longitude": -84.5018
+        },
+        "pred_city": "Cincinnati",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Louisvillel",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/San Antonio_ (29.471013, -98.504707).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Houston",
+        "continent": "North America",
+        "latitude": 29.7618,
+        "longitude": -95.3698,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Houston\",\n    \"latitude\": 29.7618,\n    \"longitude\": -95.3698\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 29.471013,
+        "longitude": -98.504707,
+        "city": "San Antonio",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 304.7545084557788,
+        "geoguessr_score": 4293,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 29.7618,
+          "longitude": -95.3698
+        },
+        "pred_city": "Houston",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "San Antonio",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Las Vegas_ (36.254271, -115.274333).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Phoenix",
+        "continent": "North America",
+        "latitude": 33.5088,
+        "longitude": -112.0737,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Phoenix\",\n    \"latitude\": 33.5088,\n    \"longitude\": -112.0737\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 36.254271,
+        "longitude": -115.274333,
+        "city": "Las Vegas",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 422.35826171381285,
+        "geoguessr_score": 4048,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 33.5088,
+          "longitude": -112.0737
+        },
+        "pred_city": "Phoenix",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Las Vegas",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Chicago_ (41.823492, -87.682213).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Chicago",
+        "continent": "North America",
+        "latitude": 41.8781,
+        "longitude": -87.6298,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Chicago\",\n    \"latitude\": 41.8781,\n    \"longitude\": -87.6298\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 41.823492,
+        "longitude": -87.682213,
+        "city": "Chicago",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 7.464388273863392,
+        "geoguessr_score": 4981,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 41.8781,
+          "longitude": -87.6298
+        },
+        "pred_city": "Chicago",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Chicago",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/San Jose_ (37.334308, -121.901805).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Francisco",
+        "continent": "North America",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Francisco\",\n    \"latitude\": 37.7749,\n    \"longitude\": -122.4194\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 37.334308,
+        "longitude": -121.901805,
+        "city": "San Jose",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 66.94762019976119,
+        "geoguessr_score": 4835,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "pred_city": "San Francisco",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "San Jose",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Jacksonvillef_ (30.364968, -81.64396).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Tallahassee",
+        "continent": "North America",
+        "latitude": 30.4437,
+        "longitude": -84.4068,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Tallahassee\",\n    \"latitude\": 30.4437,\n    \"longitude\": -84.4068\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 30.364968,
+        "longitude": -81.64396,
+        "city": "Jacksonvillef",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 265.1023083513271,
+        "geoguessr_score": 4379,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 30.4437,
+          "longitude": -84.4068
+        },
+        "pred_city": "Tallahassee",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Jacksonvillef",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Portland_ (45.513448, -122.663267).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Seattle",
+        "continent": "North America",
+        "latitude": 47.6062,
+        "longitude": -122.3321,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Seattle\",\n    \"latitude\": 47.6062,\n    \"longitude\": -122.3321\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 45.513448,
+        "longitude": -122.663267,
+        "city": "Portland",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 234.0762117773119,
+        "geoguessr_score": 4447,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 47.6062,
+          "longitude": -122.3321
+        },
+        "pred_city": "Seattle",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Portland",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Boston_ (42.315304, -71.04107).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Boston",
+        "continent": "North America",
+        "latitude": 42.3601,
+        "longitude": -71.4228,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Boston\",\n    \"latitude\": 42.3601,\n    \"longitude\": -71.4228\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 42.315304,
+        "longitude": -71.04107,
+        "city": "Boston",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 31.768799589929476,
+        "geoguessr_score": 4921,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 42.3601,
+          "longitude": -71.4228
+        },
+        "pred_city": "Boston",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Boston",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/San Diego_ (32.733452, -117.151167).jpg",
+      "prediction": {
+        "country": "Brazil",
+        "city": "São Paulo",
+        "continent": "South America",
+        "latitude": -23.5475,
+        "longitude": -46.6347,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"South America\",\n    \"country\": \"Brazil\",\n    \"city\": \"São Paulo\",\n    \"latitude\": -23.5475,\n    \"longitude\": -46.6347\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 32.733452,
+        "longitude": -117.151167,
+        "city": "San Diego",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 9745.121582751666,
+        "geoguessr_score": 38,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": false,
+        "pred_coords": {
+          "latitude": -23.5475,
+          "longitude": -46.6347
+        },
+        "pred_city": "São Paulo",
+        "pred_country": "Brazil",
+        "gt_location": {
+          "city": "San Diego",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Houston_ (29.80536, -95.403329).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "New Orleans",
+        "continent": "North America",
+        "latitude": 30.0853,
+        "longitude": -90.0853,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"New Orleans\",\n    \"latitude\": 30.0853,\n    \"longitude\": -90.0853\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 29.80536,
+        "longitude": -95.403329,
+        "city": "Houston",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 513.293327342941,
+        "geoguessr_score": 3868,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 30.0853,
+          "longitude": -90.0853
+        },
+        "pred_city": "New Orleans",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Houston",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Tulsa_ (36.140867, -95.918747).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Tulsa",
+        "continent": "North America",
+        "latitude": 36.1111,
+        "longitude": -95.9667,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Tulsa\",\n    \"latitude\": 36.1111,\n    \"longitude\": -95.9667\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 36.140867,
+        "longitude": -95.918747,
+        "city": "Tulsa",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 5.431844189165943,
+        "geoguessr_score": 4986,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 36.1111,
+          "longitude": -95.9667
+        },
+        "pred_city": "Tulsa",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Tulsa",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Houston_ (29.773402, -95.391371).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Houston",
+        "continent": "North America",
+        "latitude": 29.7618,
+        "longitude": -95.3694,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Houston\",\n    \"latitude\": 29.7618,\n    \"longitude\": -95.3694\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 29.773402,
+        "longitude": -95.391371,
+        "city": "Houston",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 2.4822675700492316,
+        "geoguessr_score": 4993,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 29.7618,
+          "longitude": -95.3694
+        },
+        "pred_city": "Houston",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Houston",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Kansas City_ (39.144619, -94.572185).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Chicago",
+        "continent": "North America",
+        "latitude": 41.8781,
+        "longitude": -87.6298,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Chicago\",\n    \"latitude\": 41.8781,\n    \"longitude\": -87.6298\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 39.144619,
+        "longitude": -94.572185,
+        "city": "Kansas City",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 660.6457034389915,
+        "geoguessr_score": 3593,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 41.8781,
+          "longitude": -87.6298
+        },
+        "pred_city": "Chicago",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Kansas City",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Indianapolisg_ (39.75794, -86.150657).jpg",
+      "prediction": {
+        "country": "United Kingdom",
+        "city": "London",
+        "continent": "Europe",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"Europe\",\n    \"country\": \"United Kingdom\",\n    \"city\": \"London\",\n    \"latitude\": 51.5074,\n    \"longitude\": -0.1278\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 39.75794,
+        "longitude": -86.150657,
+        "city": "Indianapolisg",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 6420.472774146953,
+        "geoguessr_score": 201,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": false,
+        "pred_coords": {
+          "latitude": 51.5074,
+          "longitude": -0.1278
+        },
+        "pred_city": "London",
+        "pred_country": "United Kingdom",
+        "gt_location": {
+          "city": "Indianapolisg",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Miami_ (25.766364, -80.230528).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Miami",
+        "continent": "North America",
+        "latitude": 25.7617,
+        "longitude": -80.2127,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Miami\",\n    \"latitude\": 25.7617,\n    \"longitude\": -80.2127\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 25.766364,
+        "longitude": -80.230528,
+        "city": "Miami",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1.8591180931847486,
+        "geoguessr_score": 4995,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 25.7617,
+          "longitude": -80.2127
+        },
+        "pred_city": "Miami",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Miami",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Miami_ (25.802811, -80.215782).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Tampa",
+        "continent": "North America",
+        "latitude": 27.9167,
+        "longitude": -82.5583,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Tampa\",\n    \"latitude\": 27.9167,\n    \"longitude\": -82.5583\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 25.802811,
+        "longitude": -80.215782,
+        "city": "Miami",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 330.5085064256617,
+        "geoguessr_score": 4238,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 27.9167,
+          "longitude": -82.5583
+        },
+        "pred_city": "Tampa",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Miami",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Portland_ (45.514779, -122.648891).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Portland",
+        "continent": "North America",
+        "latitude": 45.5236,
+        "longitude": -122.676,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Portland\",\n    \"latitude\": 45.5236,\n    \"longitude\": -122.6760\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 45.514779,
+        "longitude": -122.648891,
+        "city": "Portland",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 2.328730832046933,
+        "geoguessr_score": 4994,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 45.5236,
+          "longitude": -122.676
+        },
+        "pred_city": "Portland",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Portland",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Los Angeles_ (34.032966, -118.406359).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Los Angeles",
+        "continent": "North America",
+        "latitude": 34.105,
+        "longitude": -118.343,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Los Angeles\",\n    \"latitude\": 34.105,\n    \"longitude\": -118.343\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 34.032966,
+        "longitude": -118.406359,
+        "city": "Los Angeles",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 9.910392542714966,
+        "geoguessr_score": 4975,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 34.105,
+          "longitude": -118.343
+        },
+        "pred_city": "Los Angeles",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Los Angeles",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Jacksonvillef_ (30.345487, -81.651969).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Antonio",
+        "continent": "North America",
+        "latitude": 29.4998,
+        "longitude": -98.4998,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Antonio\",\n    \"latitude\": 29.4998,\n    \"longitude\": -98.4998\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 30.345487,
+        "longitude": -81.651969,
+        "city": "Jacksonvillef",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1624.898563601003,
+        "geoguessr_score": 2218,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 29.4998,
+          "longitude": -98.4998
+        },
+        "pred_city": "San Antonio",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Jacksonvillef",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/San Franciscoh_ (37.755383, -122.412029).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Francisco",
+        "continent": "North America",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Francisco\",\n    \"latitude\": 37.7749,\n    \"longitude\": -122.4194\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 37.755383,
+        "longitude": -122.412029,
+        "city": "San Franciscoh",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 2.2648498232200445,
+        "geoguessr_score": 4994,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "pred_city": "San Francisco",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "San Franciscoh",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Chicago_ (41.843718, -87.691306).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Antonio",
+        "continent": "North America",
+        "latitude": 29.4897,
+        "longitude": -98.4986,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Antonio\",\n    \"latitude\": 29.4897,\n    \"longitude\": -98.4986\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 41.843718,
+        "longitude": -87.691306,
+        "city": "Chicago",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1682.2120284607702,
+        "geoguessr_score": 2156,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 29.4897,
+          "longitude": -98.4986
+        },
+        "pred_city": "San Antonio",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Chicago",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Oakland_ (37.755951, -122.243567).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Francisco",
+        "continent": "North America",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Francisco\",\n    \"latitude\": 37.7749,\n    \"longitude\": -122.4194\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 37.755951,
+        "longitude": -122.243567,
+        "city": "Oakland",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 15.599087216786907,
+        "geoguessr_score": 4961,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "pred_city": "San Francisco",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Oakland",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Bakersfield_ (35.344666, -119.056797).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Sacramento",
+        "continent": "North America",
+        "latitude": 38.5833,
+        "longitude": -121.4992,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Sacramento\",\n    \"latitude\": 38.5833,\n    \"longitude\": -121.4992\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 35.344666,
+        "longitude": -119.056797,
+        "city": "Bakersfield",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 420.4022492519868,
+        "geoguessr_score": 4052,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 38.5833,
+          "longitude": -121.4992
+        },
+        "pred_city": "Sacramento",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Bakersfield",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Phoenix_ (33.562813, -112.090881).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Tulsa",
+        "continent": "North America",
+        "latitude": 36.1111,
+        "longitude": -95.9667,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Tulsa\",\n    \"latitude\": 36.1111,\n    \"longitude\": -95.9667\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 33.562813,
+        "longitude": -112.090881,
+        "city": "Phoenix",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1496.7756043227741,
+        "geoguessr_score": 2365,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 36.1111,
+          "longitude": -95.9667
+        },
+        "pred_city": "Tulsa",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Phoenix",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Las Vegas_ (36.216201, -115.277301).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Las Vegas",
+        "continent": "North America",
+        "latitude": 36.1077,
+        "longitude": -115.2436,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Las Vegas\",\n    \"latitude\": 36.1077,\n    \"longitude\": -115.2436\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 36.216201,
+        "longitude": -115.277301,
+        "city": "Las Vegas",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 12.438321019081224,
+        "geoguessr_score": 4969,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 36.1077,
+          "longitude": -115.2436
+        },
+        "pred_city": "Las Vegas",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Las Vegas",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Milwaukee_ (43.039655, -87.975818).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Chicago",
+        "continent": "North America",
+        "latitude": 41.8781,
+        "longitude": -87.6298,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Chicago\",\n    \"latitude\": 41.8781,\n    \"longitude\": -87.6298\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 43.039655,
+        "longitude": -87.975818,
+        "city": "Milwaukee",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 132.24108472283535,
+        "geoguessr_score": 4680,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 41.8781,
+          "longitude": -87.6298
+        },
+        "pred_city": "Chicago",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Milwaukee",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Oklahoma City_ (35.476909, -97.508279).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Tulsa",
+        "continent": "North America",
+        "latitude": 36.1111,
+        "longitude": -95.9389,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Tulsa\",\n    \"latitude\": 36.1111,\n    \"longitude\": -95.9389\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 35.476909,
+        "longitude": -97.508279,
+        "city": "Oklahoma City",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 158.1375978125616,
+        "geoguessr_score": 4619,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 36.1111,
+          "longitude": -95.9389
+        },
+        "pred_city": "Tulsa",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Oklahoma City",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Bakersfield_ (35.365715, -119.040546).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Los Angeles",
+        "continent": "North America",
+        "latitude": 34.0522,
+        "longitude": -118.2436,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Los Angeles\",\n    \"latitude\": 34.0522,\n    \"longitude\": -118.2436\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 35.365715,
+        "longitude": -119.040546,
+        "city": "Bakersfield",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 163.21329883047497,
+        "geoguessr_score": 4608,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 34.0522,
+          "longitude": -118.2436
+        },
+        "pred_city": "Los Angeles",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Bakersfield",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Phoenix_ (33.548923, -112.107074).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Phoenix",
+        "continent": "North America",
+        "latitude": 33.4838,
+        "longitude": -112.0818,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Phoenix\",\n    \"latitude\": 33.4838,\n    \"longitude\": -112.0818\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 33.548923,
+        "longitude": -112.107074,
+        "city": "Phoenix",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 7.610981456008511,
+        "geoguessr_score": 4981,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 33.4838,
+          "longitude": -112.0818
+        },
+        "pred_city": "Phoenix",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Phoenix",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Phoenix_ (33.575134, -112.075525).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Phoenix",
+        "continent": "North America",
+        "latitude": 33.5088,
+        "longitude": -112.0737,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Phoenix\",\n    \"latitude\": 33.5088,\n    \"longitude\": -112.0737\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 33.575134,
+        "longitude": -112.075525,
+        "city": "Phoenix",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 7.377943269727628,
+        "geoguessr_score": 4981,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 33.5088,
+          "longitude": -112.0737
+        },
+        "pred_city": "Phoenix",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Phoenix",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Bakersfield_ (35.362739, -119.055579).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Bakersfield",
+        "continent": "North America",
+        "latitude": 35.9067,
+        "longitude": -118.4667,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Bakersfield\",\n    \"latitude\": 35.9067,\n    \"longitude\": -118.4667\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 35.362739,
+        "longitude": -119.055579,
+        "city": "Bakersfield",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 80.56501675774531,
+        "geoguessr_score": 4802,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 35.9067,
+          "longitude": -118.4667
+        },
+        "pred_city": "Bakersfield",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Bakersfield",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/San Diego_ (32.715971, -117.153547).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Los Angeles",
+        "continent": "North America",
+        "latitude": 34.0522,
+        "longitude": -118.2436,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Los Angeles\",\n    \"latitude\": 34.0522,\n    \"longitude\": -118.2436\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 32.715971,
+        "longitude": -117.153547,
+        "city": "San Diego",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 179.77399796721306,
+        "geoguessr_score": 4570,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 34.0522,
+          "longitude": -118.2436
+        },
+        "pred_city": "Los Angeles",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "San Diego",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Los Angeles_ (34.001815, -118.433512).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Francisco",
+        "continent": "North America",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Francisco\",\n    \"latitude\": 37.7749,\n    \"longitude\": -122.4194\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 34.001815,
+        "longitude": -118.433512,
+        "city": "Los Angeles",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 552.1008126526096,
+        "geoguessr_score": 3793,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "pred_city": "San Francisco",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Los Angeles",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Tulsa_ (36.139045, -95.89227).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Tulsa",
+        "continent": "North America",
+        "latitude": 36.1053,
+        "longitude": -95.9488,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Tulsa\",\n    \"latitude\": 36.1053,\n    \"longitude\": -95.9488\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 36.139045,
+        "longitude": -95.89227,
+        "city": "Tulsa",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 6.313496615250015,
+        "geoguessr_score": 4984,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 36.1053,
+          "longitude": -95.9488
+        },
+        "pred_city": "Tulsa",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Tulsa",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Sacramento_ (38.565057, -121.474589).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Francisco",
+        "continent": "North America",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Francisco\",\n    \"latitude\": 37.7749,\n    \"longitude\": -122.4194\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 38.565057,
+        "longitude": -121.474589,
+        "city": "Sacramento",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 120.58671867120701,
+        "geoguessr_score": 4707,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "pred_city": "San Francisco",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Sacramento",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Portland_ (45.513541, -122.674467).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Portland",
+        "continent": "North America",
+        "latitude": 45.5237,
+        "longitude": -122.676,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Portland\",\n    \"latitude\": 45.5237,\n    \"longitude\": -122.6760\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 45.513541,
+        "longitude": -122.674467,
+        "city": "Portland",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1.135926001007576,
+        "geoguessr_score": 4997,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 45.5237,
+          "longitude": -122.676
+        },
+        "pred_city": "Portland",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Portland",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Kansas City_ (39.126843, -94.568563).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Columbus",
+        "continent": "North America",
+        "latitude": 40.0858,
+        "longitude": -81.8889,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Columbus\",\n    \"latitude\": 40.0858,\n    \"longitude\": -81.8889\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 39.126843,
+        "longitude": -94.568563,
+        "city": "Kansas City",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1090.5419804768198,
+        "geoguessr_score": 2898,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 40.0858,
+          "longitude": -81.8889
+        },
+        "pred_city": "Columbus",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Kansas City",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Albuquerque_ (35.114992, -106.661869).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Albuquerque",
+        "continent": "North America",
+        "latitude": 35.1111,
+        "longitude": -106.6833,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Albuquerque\",\n    \"latitude\": 35.1111,\n    \"longitude\": -106.6833\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 35.114992,
+        "longitude": -106.661869,
+        "city": "Albuquerque",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1.9968151680203376,
+        "geoguessr_score": 4995,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 35.1111,
+          "longitude": -106.6833
+        },
+        "pred_city": "Albuquerque",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Albuquerque",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/San Antonio_ (29.441756, -98.515454).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Dallas",
+        "continent": "North America",
+        "latitude": 32.777778,
+        "longitude": -96.783333,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Dallas\",\n    \"latitude\": 32.777778,\n    \"longitude\": -96.783333\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 29.441756,
+        "longitude": -98.515454,
+        "city": "San Antonio",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 405.9300742216024,
+        "geoguessr_score": 4081,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 32.777778,
+          "longitude": -96.783333
+        },
+        "pred_city": "Dallas",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "San Antonio",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Atlanta_ (33.742137, -84.412879).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "New York",
+        "continent": "North America",
+        "latitude": 40.78312,
+        "longitude": -73.9654,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"New York\",\n    \"latitude\": 40.78312,\n    \"longitude\": -73.9654\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 33.742137,
+        "longitude": -84.412879,
+        "city": "Atlanta",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1209.9469177548078,
+        "geoguessr_score": 2730,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 40.78312,
+          "longitude": -73.9654
+        },
+        "pred_city": "New York",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Atlanta",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Memphis_ (35.114396, -89.966982).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Memphis",
+        "continent": "North America",
+        "latitude": 35.1111,
+        "longitude": -90.0833,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Memphis\",\n    \"latitude\": 35.1111,\n    \"longitude\": -90.0833\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 35.114396,
+        "longitude": -89.966982,
+        "city": "Memphis",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 10.586615343035131,
+        "geoguessr_score": 4973,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 35.1111,
+          "longitude": -90.0833
+        },
+        "pred_city": "Memphis",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Memphis",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Minneapolis_ (44.984557, -93.265232).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Minneapolis",
+        "continent": "North America",
+        "latitude": 44.9781,
+        "longitude": -93.0472,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Minneapolis\",\n    \"latitude\": 44.9781,\n    \"longitude\": -93.0472\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 44.984557,
+        "longitude": -93.265232,
+        "city": "Minneapolis",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 17.163738018665487,
+        "geoguessr_score": 4957,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 44.9781,
+          "longitude": -93.0472
+        },
+        "pred_city": "Minneapolis",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Minneapolis",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Minneapolis_ (44.980459, -93.282944).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Dallas",
+        "continent": "North America",
+        "latitude": 32.777778,
+        "longitude": -96.783333,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Dallas\",\n    \"latitude\": 32.777778,\n    \"longitude\": -96.783333\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 44.980459,
+        "longitude": -93.282944,
+        "city": "Minneapolis",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1389.9225846205616,
+        "geoguessr_score": 2495,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 32.777778,
+          "longitude": -96.783333
+        },
+        "pred_city": "Dallas",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Minneapolis",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/San Jose_ (37.35259, -121.873823).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Francisco",
+        "continent": "North America",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Francisco\",\n    \"latitude\": 37.7749,\n    \"longitude\": -122.4194\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 37.35259,
+        "longitude": -121.873823,
+        "city": "San Jose",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 67.21264880137963,
+        "geoguessr_score": 4834,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "pred_city": "San Francisco",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "San Jose",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Portland_ (45.544517, -122.655647).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Portland",
+        "continent": "North America",
+        "latitude": 45.5231,
+        "longitude": -122.676,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Portland\",\n    \"latitude\": 45.5231,\n    \"longitude\": -122.6760\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 45.544517,
+        "longitude": -122.655647,
+        "city": "Portland",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 2.8608685017318196,
+        "geoguessr_score": 4992,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 45.5231,
+          "longitude": -122.676
+        },
+        "pred_city": "Portland",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Portland",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Jacksonvillef_ (30.326486, -81.650429).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Tampa",
+        "continent": "North America",
+        "latitude": 27.9167,
+        "longitude": -82.5167,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Tampa\",\n    \"latitude\": 27.9167,\n    \"longitude\": -82.5167\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 30.326486,
+        "longitude": -81.650429,
+        "city": "Jacksonvillef",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 280.8546077928783,
+        "geoguessr_score": 4344,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 27.9167,
+          "longitude": -82.5167
+        },
+        "pred_city": "Tampa",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Jacksonvillef",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Omaha_ (41.278009, -96.059806).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Unknown",
+        "continent": "North America",
+        "latitude": 41.383333,
+        "longitude": -95.883333,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Unknown\",\n    \"latitude\": 41.383333,\n    \"longitude\": -95.883333\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 41.278009,
+        "longitude": -96.059806,
+        "city": "Omaha",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 18.822339255655187,
+        "geoguessr_score": 4953,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 41.383333,
+          "longitude": -95.883333
+        },
+        "pred_city": "Unknown",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Omaha",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Austin_ (30.278537, -97.760427).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Antonio",
+        "continent": "North America",
+        "latitude": 29.4998,
+        "longitude": -98.4998,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Antonio\",\n    \"latitude\": 29.4998,\n    \"longitude\": -98.4998\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 30.278537,
+        "longitude": -97.760427,
+        "city": "Austin",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 112.15464480166034,
+        "geoguessr_score": 4727,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 29.4998,
+          "longitude": -98.4998
+        },
+        "pred_city": "San Antonio",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Austin",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Fresno_ (36.775626, -119.80931).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Los Angeles",
+        "continent": "North America",
+        "latitude": 34.0522,
+        "longitude": -118.2436,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Los Angeles\",\n    \"latitude\": 34.0522,\n    \"longitude\": -118.2436\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 36.775626,
+        "longitude": -119.80931,
+        "city": "Fresno",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 334.4085494022369,
+        "geoguessr_score": 4230,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 34.0522,
+          "longitude": -118.2436
+        },
+        "pred_city": "Los Angeles",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Fresno",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Philadelphiae_ (40.034284, -75.130936).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Los Angeles",
+        "continent": "North America",
+        "latitude": 34.0522,
+        "longitude": -118.2436,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Los Angeles\",\n    \"latitude\": 34.0522,\n    \"longitude\": -118.2436\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 40.034284,
+        "longitude": -75.130936,
+        "city": "Philadelphiae",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 3845.7138569604745,
+        "geoguessr_score": 730,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 34.0522,
+          "longitude": -118.2436
+        },
+        "pred_city": "Los Angeles",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Philadelphiae",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Fresno_ (36.76682, -119.800285).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Los Angeles",
+        "continent": "North America",
+        "latitude": 34.0522,
+        "longitude": -118.2436,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Los Angeles\",\n    \"latitude\": 34.0522,\n    \"longitude\": -118.2436\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 36.76682,
+        "longitude": -119.800285,
+        "city": "Fresno",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 333.17850404837725,
+        "geoguessr_score": 4232,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 34.0522,
+          "longitude": -118.2436
+        },
+        "pred_city": "Los Angeles",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Fresno",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Raleigh_ (35.831713, -78.641314).jpg",
+      "prediction": {
+        "country": "United Kingdom",
+        "city": "London",
+        "continent": "Europe",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"Europe\",\n    \"country\": \"United Kingdom\",\n    \"city\": \"London\",\n    \"latitude\": 51.5074,\n    \"longitude\": -0.1278\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 35.831713,
+        "longitude": -78.641314,
+        "city": "Raleigh",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 6230.868243215984,
+        "geoguessr_score": 221,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": false,
+        "pred_coords": {
+          "latitude": 51.5074,
+          "longitude": -0.1278
+        },
+        "pred_city": "London",
+        "pred_country": "United Kingdom",
+        "gt_location": {
+          "city": "Raleigh",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Detroit_ (42.379218, -83.111282).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Detroit",
+        "continent": "North America",
+        "latitude": 42.3828,
+        "longitude": -83.0688,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Detroit\",\n    \"latitude\": 42.3828,\n    \"longitude\": -83.0688\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 42.379218,
+        "longitude": -83.111282,
+        "city": "Detroit",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 3.5120170763649585,
+        "geoguessr_score": 4991,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 42.3828,
+          "longitude": -83.0688
+        },
+        "pred_city": "Detroit",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Detroit",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/El Paso_ (31.85218, -106.418313).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "El Paso",
+        "continent": "North America",
+        "latitude": 31.777778,
+        "longitude": -105.933333,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"El Paso\",\n    \"latitude\": 31.777778,\n    \"longitude\": -105.933333\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 31.85218,
+        "longitude": -106.418313,
+        "city": "El Paso",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 46.56577239392505,
+        "geoguessr_score": 4884,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 31.777778,
+          "longitude": -105.933333
+        },
+        "pred_city": "El Paso",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "El Paso",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Bakersfield_ (35.372118, -119.033518).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Phoenix",
+        "continent": "North America",
+        "latitude": 33.4836,
+        "longitude": -112.0837,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Phoenix\",\n    \"latitude\": 33.4836,\n    \"longitude\": -112.0837\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 35.372118,
+        "longitude": -119.033518,
+        "city": "Bakersfield",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 670.9372714981134,
+        "geoguessr_score": 3575,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 33.4836,
+          "longitude": -112.0837
+        },
+        "pred_city": "Phoenix",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Bakersfield",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Seattle_ (47.61555, -122.312616).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Francisco",
+        "continent": "North America",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Francisco\",\n    \"latitude\": 37.7749,\n    \"longitude\": -122.4194\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 47.61555,
+        "longitude": -122.312616,
+        "city": "Seattle",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1094.2648501379053,
+        "geoguessr_score": 2893,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "pred_city": "San Francisco",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Seattle",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Tampa_ (27.989785, -82.470264).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Orlando",
+        "continent": "North America",
+        "latitude": 28.5747,
+        "longitude": -81.3792,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Orlando\",\n    \"latitude\": 28.5747,\n    \"longitude\": -81.3792\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 27.989785,
+        "longitude": -82.470264,
+        "city": "Tampa",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 125.07696507201307,
+        "geoguessr_score": 4696,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 28.5747,
+          "longitude": -81.3792
+        },
+        "pred_city": "Orlando",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Tampa",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Portland_ (45.54292, -122.636213).jpg",
+      "prediction": {
+        "country": "United Kingdom",
+        "city": "London",
+        "continent": "Europe",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"Europe\",\n    \"country\": \"United Kingdom\",\n    \"city\": \"London\",\n    \"latitude\": 51.5074,\n    \"longitude\": -0.1278\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 45.54292,
+        "longitude": -122.636213,
+        "city": "Portland",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 7902.785731921018,
+        "geoguessr_score": 96,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": false,
+        "pred_coords": {
+          "latitude": 51.5074,
+          "longitude": -0.1278
+        },
+        "pred_city": "London",
+        "pred_country": "United Kingdom",
+        "gt_location": {
+          "city": "Portland",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Columbus_ (40.010604, -82.992285).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Columbus",
+        "continent": "North America",
+        "latitude": 39.9998,
+        "longitude": -82.0002,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Columbus\",\n    \"latitude\": 39.9998,\n    \"longitude\": -82.0002\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 40.010604,
+        "longitude": -82.992285,
+        "city": "Columbus",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 84.507718523019,
+        "geoguessr_score": 4793,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 39.9998,
+          "longitude": -82.0002
+        },
+        "pred_city": "Columbus",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Columbus",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/San Antonio_ (29.482927, -98.49734).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Austin",
+        "continent": "North America",
+        "latitude": 30.3333,
+        "longitude": -97.6667,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Austin\",\n    \"latitude\": 30.3333,\n    \"longitude\": -97.6667\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 29.482927,
+        "longitude": -98.49734,
+        "city": "San Antonio",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 123.89842004102371,
+        "geoguessr_score": 4699,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 30.3333,
+          "longitude": -97.6667
+        },
+        "pred_city": "Austin",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "San Antonio",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Seattle_ (47.637533, -122.326942).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Francisco",
+        "continent": "North America",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Francisco\",\n    \"latitude\": 37.7749,\n    \"longitude\": -122.4194\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 47.637533,
+        "longitude": -122.326942,
+        "city": "Seattle",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1096.7005455819449,
+        "geoguessr_score": 2889,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "pred_city": "San Francisco",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Seattle",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Long Beach_ (33.794855, -118.162258).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Francisco",
+        "continent": "North America",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Francisco\",\n    \"latitude\": 37.7749,\n    \"longitude\": -122.4194\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 33.794855,
+        "longitude": -118.162258,
+        "city": "Long Beach",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 585.7880045968873,
+        "geoguessr_score": 3730,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "pred_city": "San Francisco",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Long Beach",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Chicago_ (41.856217, -87.703303).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Chicago",
+        "continent": "North America",
+        "latitude": 41.8781,
+        "longitude": -87.6298,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Chicago\",\n    \"latitude\": 41.8781,\n    \"longitude\": -87.6298\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 41.856217,
+        "longitude": -87.703303,
+        "city": "Chicago",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 6.554875317220088,
+        "geoguessr_score": 4983,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 41.8781,
+          "longitude": -87.6298
+        },
+        "pred_city": "Chicago",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Chicago",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Austin_ (30.298569, -97.760781).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Austin",
+        "continent": "North America",
+        "latitude": 30.3087,
+        "longitude": -97.7495,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Austin\",\n    \"latitude\": 30.3087,\n    \"longitude\": -97.7495\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 30.298569,
+        "longitude": -97.760781,
+        "city": "Austin",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1.5626628172794212,
+        "geoguessr_score": 4996,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 30.3087,
+          "longitude": -97.7495
+        },
+        "pred_city": "Austin",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Austin",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Los Angeles_ (34.026087, -118.388783).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Los Angeles",
+        "continent": "North America",
+        "latitude": 34.0522,
+        "longitude": -118.2436,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Los Angeles\",\n    \"latitude\": 34.0522,\n    \"longitude\": -118.2436\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 34.026087,
+        "longitude": -118.388783,
+        "city": "Los Angeles",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 13.688985384412483,
+        "geoguessr_score": 4965,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 34.0522,
+          "longitude": -118.2436
+        },
+        "pred_city": "Los Angeles",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Los Angeles",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/San Franciscoh_ (37.758085, -122.4191).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Francisco",
+        "continent": "North America",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Francisco\",\n    \"latitude\": 37.7749,\n    \"longitude\": -122.4194\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 37.758085,
+        "longitude": -122.4191,
+        "city": "San Franciscoh",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 1.8699286420450831,
+        "geoguessr_score": 4995,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "pred_city": "San Francisco",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "San Franciscoh",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Bakersfield_ (35.327257, -119.029971).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "San Diego",
+        "continent": "North America",
+        "latitude": 32.8181,
+        "longitude": -117.1588,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"San Diego\",\n    \"latitude\": 32.8181,\n    \"longitude\": -117.1588\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 35.327257,
+        "longitude": -119.029971,
+        "city": "Bakersfield",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 327.92537241546694,
+        "geoguessr_score": 4243,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 32.8181,
+          "longitude": -117.1588
+        },
+        "pred_city": "San Diego",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Bakersfield",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Atlanta_ (33.741683, -84.443888).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Atlanta",
+        "continent": "North America",
+        "latitude": 33.8488,
+        "longitude": -84.3884,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Atlanta\",\n    \"latitude\": 33.8488,\n    \"longitude\": -84.3884\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 33.741683,
+        "longitude": -84.443888,
+        "city": "Atlanta",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 12.967630297944362,
+        "geoguessr_score": 4967,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 33.8488,
+          "longitude": -84.3884
+        },
+        "pred_city": "Atlanta",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Atlanta",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Sacramento_ (38.551624, -121.446731).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Los Angeles",
+        "continent": "North America",
+        "latitude": 34.0522,
+        "longitude": -118.2436,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Los Angeles\",\n    \"latitude\": 34.0522,\n    \"longitude\": -118.2436\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 38.551624,
+        "longitude": -121.446731,
+        "city": "Sacramento",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 576.7043078582159,
+        "geoguessr_score": 3747,
+        "city_match": false,
+        "city_name_match": false,
+        "city_geocoded_match": false,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 34.0522,
+          "longitude": -118.2436
+        },
+        "pred_city": "Los Angeles",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Sacramento",
+          "country": "United States"
+        }
+      }
+    },
+    {
+      "image_path": "/content/drive/MyDrive/Navig/data/google_street_view/Images/Portland_ (45.550873, -122.628937).jpg",
+      "prediction": {
+        "country": "United States",
+        "city": "Portland",
+        "continent": "North America",
+        "latitude": 45.5231,
+        "longitude": -122.676,
+        "reasoning": "```json\n{\n  \"result\": {\n    \"continent\": \"North America\",\n    \"country\": \"United States\",\n    \"city\": \"Portland\",\n    \"latitude\": 45.5231,\n    \"longitude\": -122.6760\n  }\n}\n```"
+      },
+      "ground_truth": {
+        "latitude": 45.550873,
+        "longitude": -122.628937,
+        "city": "Portland",
+        "country": "United States"
+      },
+      "metrics": {
+        "distance_km": 4.793062336941516,
+        "geoguessr_score": 4988,
+        "city_match": true,
+        "city_name_match": true,
+        "city_geocoded_match": true,
+        "country_match": true,
+        "pred_coords": {
+          "latitude": 45.5231,
+          "longitude": -122.676
+        },
+        "pred_city": "Portland",
+        "pred_country": "United States",
+        "gt_location": {
+          "city": "Portland",
+          "country": "United States"
+        }
+      }
+    }
+  ]
+}

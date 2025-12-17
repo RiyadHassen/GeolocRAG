@@ -3,7 +3,7 @@ import gc
 from rag_retriver import retrieve_similar_images
 from sentence_transformers import SentenceTransformer
 
-from infer_fintuned import InferencePipeline
+from infer_finetuned import InferencePipeline
 from infer import infer_model 
 
 
@@ -20,6 +20,7 @@ class GeoLocReasonPipeline:
          self.reasoner_model_path = reasoner_model_path
          self.inference_model_path = inference_model_path
          self.inference_adapter_path = inference_adapter_path
+         self.inference_pipe = InferencePipeline(base_model_path = self.inference_model_path, adapter_path =self.inference_adapter_path)
 
      def call_resoner_model(self,query_image):
          """
@@ -42,25 +43,24 @@ class GeoLocReasonPipeline:
          pass
      def final_predictor_model(self, reason, query_image):
          
-        inference_pipe = InferencePipeline(base_model_path = self.inference_base_model, adapter_path =self.inference_adapter_path)
-         
         instruction = (
             "You are expert in analyzing image and predicting the location from the scence identify common clues to identify the locaition and "
             "return the contient, country, city , latitude longtiude of the given image output a json format as follow don't output extra result." \
             f"Given the reasoning here{reason}"
             "{result:{\"country\":\"\", \"city\":\"\", \"latitude\":, \"longitude\":}}"
         )
-        final_prediction = inference_pipe.predict(query_image, instruction)
+        final_prediction = self.inference_pipe.predict(query_image, instruction)
         return final_prediction
      def final_predication_based_on_result(self, query_image):
          """
          concatinate the result form the above methods and pass VLM for to generate a final 
          """
          #call reasoner to get reason from the model
-         reasoning = self.call_resoner_model(query_image)
+         #reasoning = self.call_resoner_model(query_image)
          # clean GPU to load the other models
-         gc.collect()
+         #gc.collect()
          #get closer candidate image
+         reasoning = "Given an image craft a brief and choesive resoning path that deduces this location based on the visual clues precent in the image"
          rag_result_image = self.call_rag_model(query_image)
          #clean rag model from gpu
          gc.collect()
@@ -85,4 +85,3 @@ if __name__ == "__main__":
                                        rag_images_path=BASE_PATH_RAG,
                                        rag_model=model)
     query_img_path = args.query_image
-

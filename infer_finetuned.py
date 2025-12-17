@@ -30,27 +30,53 @@ class InferencePipeline:
 
         self.model.eval()
 
-    def predict(self,imagepath, custom_instruction = None):
+    def predict(self,imagepath, custom_instruction = None, reference_images= None):
         # Format instruction
         if not custom_instruction:
 
             instruction = (
-                "You are expert in analyzing image and predicting the location from the scence identify common clues to identify the locaition and "
-                "return the contient, country, city , latitude longtiude of the given image output a json format as follow don't output extra result." \
-                "{result:{\"country\":\"\", \"city\":\"\", \"latitude\":, \"longitude\":}}"
+                "You are expert in analyzing image and predicting the location from the scence "
+                "identify common clues to identify the locaition and "
+                "return the continent, latitude,  longtiude, country, city , continent  of the given image output a json format as follow don't output extra result." \
+                "{result:{ \"latitude\":\"\" , \"longitude\":\"\",\"city\":\"\",\"country\":\"\",\"continent\": \"\"}}"
             )
         else:
             instruction = custom_instruction
+        query_image = Image.open(imagepath).convert("RGB")
+        content =[]
+        if reference_images is not None and len(reference_images) > 0:
+            instruction = (
+                "You are expert in analyzing image and predicting the location from the scene. "
+                "Below are reference images of similar locations that may help with your analysis.\n\n"
+            ) + instruction
+
+            for idx, ref_img_path in enumerate(reference_images[:3]):
+                try: 
+                    ref_image = Image.open(ref_img_path).convert("RGB")
+                    content.append({
+                        "type":"image",
+                        "image":ref_image
+                    })
+                    content.append({
+                            "type": "text",
+                            "text": f"Reference image {idx + 1} (similar location)"
+                        })
+                except Exception as e:
+                        print(f"Warning: Could not load reference image {ref_img_path}: {e}")
+            content.append({
+                "type": "text",
+                "text": "\nNow analyze the following query image:"
+            })
+
+        content.append({"type": "image", "image": query_image})
+        content.append({"type": "text", "text": instruction})
         image = Image.open(imagepath).convert("RGB")
         # Create Qwen2-VL conversation format
         
         template = [
             {
                 "role": "user",
-                "content": [
-                    {"type": "image", "image": image},
-                    {"type": "text", "text": instruction},
-                ],
+                "content": content
             }
         ]
             
@@ -60,6 +86,17 @@ class InferencePipeline:
             tokenizer =False,
             add_generation_prompt=True
         )
+        all_images = []
+        if reference_images is not None and len(reference_images) > 0:
+            for ref_img_path in reference_images[:3]:
+                try:
+                    ref_image = Image.open(ref_img_path).convert("RGB")
+                    all_images.append(ref_image)
+                except:
+                    pass
+        all_images.append(query_image)
+        
+
         inputs = self.processor(
             text=[text],
             images=[image],
@@ -76,6 +113,7 @@ class InferencePipeline:
         generated_ids_trimmed = [
             out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
         ]
+
         output_text = self.processor.batch_decode(
             generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
         )[0]
@@ -141,11 +179,15 @@ if __name__ == "__main__":
     parser.add_argument("--base_model_path", type =str, required=True)
     parser.add_argument("--adapter_path", type=str, required=True)
     parser.add_argument("--image_path", type=str, required=True, help = "Path to image to test")
-    
+    parser.add_argument("--reference_images", type=str, nargs="+", 
+                       help="Optional reference image paths from RAG")
     args = parser.parse_args()
     base_model = args.base_model_path
     img_path = args.image_path
     adapter_path = args.adapter_path
+    ref_images = args.reference_images
 
     infernce_pipe = InferencePipeline(base_model_path = base_model, adapter_path =adapter_path)
     print(infernce_pipe.predict(img_path))
+
+
