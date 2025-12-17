@@ -3,7 +3,7 @@
 
 GeoConflict generates **geographically conflicting image edits** by combining incompatible elements from different climates, regions, or cultural contexts into a single scene.
 
-## Example: Desert Flora in Vancouver
+## Example: Vancouver
 
 **Input**: Original Vancouver Gastown Steam Clock
 ![Original Vancouver Scene](assets/Vancouver.png)
