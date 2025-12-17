@@ -1,5 +1,5 @@
 
-# GeoConflict: Geography-Aware Image Conflict Generation Pipeline
+# GeoConflict: Geography Conflict Image Generation Pipeline
 
 GeoConflict generates **geographically conflicting image edits** by combining incompatible elements from different climates, regions, or cultural contexts into a single scene.
 
