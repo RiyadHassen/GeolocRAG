@@ -149,14 +149,13 @@ This visualization shows the performance of the finetuned Qwen2-VLM model traine
 #### Madison Results
 | Original Image | Model Prediction |
 |---|---|
-| ![Madison Image](./output/runs/uwmadison_img.jpg) | ![Madison Prediction](./output/runs/madison_prediction.png) |
+| ![Madison Image](./results/runs/uwmadison_img.jpg) | ![Madison Prediction](./results/runs/madison_prediction.png) |
 
-This result displays prediction accuracy and error distribution for the Madison area test set, showing how well the model generalizes to specific geographic regions.
 
 #### MIT Results
 | Original Image | Model Prediction |
 |---|---|
-| ![MIT Image](./output/runs/mit_img.jpg) | ![MIT Prediction](./output/runs/mit_prediction.png) |
+| ![MIT Image](./results/runs/mit_img.jpg) | ![MIT Prediction](./results/runs/mit_prediction.png) |
 
 
 ### Eval
