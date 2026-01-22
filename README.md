@@ -146,9 +146,17 @@ This visualization shows the performance of the finetuned Qwen2-VLM model traine
 
 !python infer_finetuned.py --base_model_path /content/drive/MyDrive/Navig/fine_tune/Qwen2-VL-7B    --adapter_path /content/drive/MyDrive/Navig/output  --image_path /content/drive/MyDrive/Navig/data/inferenceImages/madison-coconuts.png
 
-![Madison Counts](dataset/test_image/madison-coconuts.png)
+#### Madison Results
+| Original Image | Model Prediction |
+|---|---|
+| ![Madison Image](./output/runs/uwmadison_img.jpg) | ![Madison Prediction](./output/runs/madison_prediction.png) |
 
 This result displays prediction accuracy and error distribution for the Madison area test set, showing how well the model generalizes to specific geographic regions.
+
+#### MIT Results
+| Original Image | Model Prediction |
+|---|---|
+| ![MIT Image](./output/runs/mit_img.jpg) | ![MIT Prediction](./output/runs/mit_prediction.png) |
 
 
 ### Eval
